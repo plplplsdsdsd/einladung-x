@@ -1,0 +1,132 @@
+/* ================== Базові стилі ================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #d9d9d9;
+    font-family: Arial, sans-serif;
+}
+
+/* ================== Hallo Page ================== */
+.hallo_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 50vh;
+    padding: 2em 5em;
+    text-align: left;
+}
+
+.hallo {
+    font-size: clamp(24px, 5vw, 50px); /* адаптивний шрифт */
+    color: #f97e7e;
+    margin: 0.5em 0;
+}
+
+.hallo_ein {
+    font-size: clamp(14px, 3vw, 25px);
+    color: rgb(63, 45, 45);
+    margin-left: 35%;
+}
+
+/* ================== Termin Page ================== */
+.term_page {
+    box-shadow: 0px 0px 7px 5px rgba(69, 69, 69, 0.5);
+    border: 2px solid #000;
+    max-width: 800px;
+    width: 100%;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #ffffffcb;
+    line-height: 1.5;
+    font-size: clamp(14px, 4vw, 20px);
+}
+
+.term {
+    text-align: center;
+    font-size: clamp(30px, 6vw, 60px);
+    margin-bottom: 1em;
+}
+
+.details div, .location, .datetime, .services ul, .payment ul {
+    margin-bottom: 0.5em;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 1.5em;
+    margin: 0.5em 0;
+}
+
+.confirmation {
+    background-color: #99ff99;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shtamp {
+    text-align: right;
+    margin-top: 1em;
+}
+
+.shtamp img {
+    width: 200px;
+    height: auto;
+    opacity: 0.9;
+}
+
+/* ================== Last Page ================== */
+.last_page {
+    text-align: right;
+    padding: 2em 5em;
+}
+
+/* ================== Мобільні екрани ================== */
+@media (max-width: 768px) {
+    .hallo_page {
+        align-items: center;
+        text-align: center;
+        padding: 2em 1em;
+    }
+
+    .hallo_ein {
+        margin-left: 0;
+    }
+
+    .term_page {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .term {
+        text-align: center;
+    }
+
+    .shtamp {
+        text-align: center;
+    }
+
+    .shtamp img {
+        max-width: 90%;
+    }
+
+    .last_page {
+        text-align: center;
+        padding: 2em 1em;
+    }
+
+    .details div, .location, .datetime, .services ul, .payment ul {
+        text-align: center;
+    }
+}
